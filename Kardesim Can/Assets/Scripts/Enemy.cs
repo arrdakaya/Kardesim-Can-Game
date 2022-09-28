@@ -9,11 +9,11 @@ public class Enemy : MonoBehaviour
     private int currentHealth;
     //public float speed;
 
-    //private Animator anim;
+    private Animator anim;
     void Start()
     {
         currentHealth = maxHealth;
-        //anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
         //anim.SetBool("isRunning", true);
     }
 
@@ -22,9 +22,9 @@ public class Enemy : MonoBehaviour
     {
         if(currentHealth <= 0)
         {
-            Destroy(gameObject);
+            Destroy(gameObject,1);
         }
-        //transform.Translate(Vector2.left * speed * Time.deltaTime);
+        
     }
 
     public void TakeDamage(int damage)
@@ -38,6 +38,6 @@ public class Enemy : MonoBehaviour
     }
     void Die()
     {
-        Debug.Log("died");
+        anim.SetTrigger("die");
     }
 }
