@@ -1,26 +1,13 @@
-using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.Video;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Video : MonoBehaviour
+public class SceneTransition : MonoBehaviour
 {
-
-    VideoPlayer video;
     public Animator transitionAnim;
     public string sceneName;
-
-    void Awake()
-    {
-        video = GetComponent<VideoPlayer>();
-        video.Play();
-        video.loopPointReached += CheckOver;
-
-
-    }
-
-    void CheckOver(UnityEngine.Video.VideoPlayer vp)
+    void CheckOver()
     {
         StartCoroutine(LoadScene());    //the scene that you want to load after the video has ended.
     }
@@ -32,5 +19,4 @@ public class Video : MonoBehaviour
         SceneManager.LoadScene(1);
 
     }
-
 }
