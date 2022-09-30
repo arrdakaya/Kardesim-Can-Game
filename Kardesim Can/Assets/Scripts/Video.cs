@@ -7,9 +7,8 @@ using System.Collections.Generic;
 public class Video : MonoBehaviour
 {
 
-    VideoPlayer video;
-    public Animator transitionAnim;
-    public string sceneName;
+    public VideoPlayer video;
+    
 
     void Awake()
     {
@@ -22,15 +21,9 @@ public class Video : MonoBehaviour
 
     void CheckOver(UnityEngine.Video.VideoPlayer vp)
     {
-        StartCoroutine(LoadScene());    //the scene that you want to load after the video has ended.
-    }
-
-    IEnumerator LoadScene()
-    {
-        transitionAnim.SetTrigger("end");
-        yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(1);
-
     }
+
+   
 
 }
