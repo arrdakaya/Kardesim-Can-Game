@@ -21,7 +21,7 @@ public class Video : MonoBehaviour
 
     void CheckOver(UnityEngine.Video.VideoPlayer vp)
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
    

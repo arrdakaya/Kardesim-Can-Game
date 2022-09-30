@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: b22ee71af7ec6f94ab0a2c77169df51b
+  - enabled: 1
     path: Assets/Scenes/Opening.unity
     guid: b46b308118976c4489a0a235ce8432ad
   - enabled: 1
@@ -14,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WinScene.unity
     guid: cda0ffb3e07515f44a406825a8bb43fd
+  - enabled: 1
+    path: Assets/Scenes/BitmeVideo.unity
+    guid: 979bd62f65df98147b21ba4c99fa588f
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 8881b37afef5ae046a7c508f00c632a7

@@ -7,7 +7,7 @@ public class BossHealth : MonoBehaviour
 {
     [SerializeField] private int numberOfFlashes;
     [SerializeField] private float iFramesDuration;
-    public int health = 300;
+    public int health = 600;
     public int currentHealth;
     private SpriteRenderer spriteRend;
 
